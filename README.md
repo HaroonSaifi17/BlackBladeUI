@@ -27,4 +27,4 @@ read the [contribution guide](./docs/CONTRIBUTING.md)
 
 ## License
 
-licensed under the MIT [MIT](./LICENSE) license
+licensed under the [MIT](./LICENSE) license

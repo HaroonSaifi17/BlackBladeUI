@@ -13,7 +13,7 @@ const args = process.argv.slice(2);
 
 if (args.length === 0 || args.length > 2) {
   console.log(
-    "Invalid arguments \nUsage: \n   blackbladeui <framework> <component-id>"
+    "Invalid arguments \nUsage: \n   blackbladeui <framework> <component-id>",
   );
   process.exit(1);
 }
@@ -31,7 +31,7 @@ const fetchComponent = async (framework: string, componentId: string) => {
   try {
     const response = await fetch(
       `https://api.github.com/repos/HaroonSaifi17/BlackBladeUI/src/components/${framework}/${componentId}/contents`,
-      { headers: { Accept: "application/vnd.github.v3.raw+json" } }
+      { headers: { Accept: "application/vnd.github.v3.raw+json" } },
     );
 
     if (!response.ok) {
@@ -58,5 +58,6 @@ const fetchComponent = async (framework: string, componentId: string) => {
     process.exit(1);
   }
 };
+let hh;
 
 fetchComponent(args[0], args[1]);

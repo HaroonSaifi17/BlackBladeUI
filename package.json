@@ -8,14 +8,21 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/cli.ts",
-    "dev": "tsc -w"
+    "start": "node dist/cli.js",
+    "dev": "tsc -w && node --watch dist/cli.js",
+    "lint": "eslint . --ignore-path .eslintignore --ext .ts",
+    "fomat": "prettier --ignore-path .gitignore --write ."
   },
   "author": "HaroonSaifi17",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.12.12",
-    "ts-node": "^10.9.2",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   },
   "dependencies": {
