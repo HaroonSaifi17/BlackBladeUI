@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": " A CLI tool to generate UI components with Tailwind CSS",
   "main": "dist/cli.js",
+  "type": "module",
   "bin": {
     "blackbladeui": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
     "start": "node dist/cli.js",
-    "dev": "tsc -w && node --watch dist/cli.js",
+    "dev": "tsc -w",
     "lint": "eslint . --ignore-path .eslintignore --ext .ts",
     "fomat": "prettier --ignore-path .gitignore --write ."
   },

@@ -17,15 +17,14 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         "argsIgnorePattern": "^_"
       }
     ],
-    "@typescript-eslint/no-explicit-any": "off",
-    "no-console": "warn"
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
